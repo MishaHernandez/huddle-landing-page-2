@@ -369,6 +369,14 @@ body {
   font-weight: 400;
 }
 
+img {
+  width: 100%;
+}
+
+h1, h2, h3 {
+  font-family: "Poppins";
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
