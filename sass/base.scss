@@ -18,6 +18,20 @@ main {
     padding-top: 4rem;
 }
 
+footer {
+    padding-top: 8rem;
+    background-color: $very-dark-cyan;
+    color: $very-pale-cyan;
+
+    svg {
+        fill: $very-pale-cyan;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
 img {
     width: 100%;
 }

@@ -1,8 +1,50 @@
-.attribution {
-    font-size: 11px;
+.info-contact, .info-site, .info-social, .copyright, .attribution {
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info { 
+    &-contact {
+        font-size: 1rem;
+        margin-bottom: 3.5rem;
+
+        &__logo {
+            width: 180px;
+        }
+    }
+
+    &-site {
+        display: grid;
+        gap: 1.5rem;
+        margin-bottom: 3.5rem;
+
+        &__link {
+            color: $very-pale-cyan;
+        }
+    }
+
+    &-social {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+
+        svg {
+            margin-right: 1rem;
+        }
+    }
+}
+
+.copyright {
+    font-size: 12px;
     text-align: center;
 }
 
-.attribution a {
-    color: hsl(228, 45%, 44%);
+.attribution {
+    font-size: 11px;
+    text-align: center;
+
+    &__link {
+        color: hsl(228, 45%, 44%);
+    }
 }
