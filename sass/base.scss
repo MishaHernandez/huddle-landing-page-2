@@ -6,6 +6,16 @@ body {
     font-size: 18px;
     font-family: 'Open Sans';
     font-weight: 400;
+    color: $very-dark-cyan;
+}
+
+header {
+    background-color: $very-pale-cyan;
+    display: grid;
+}
+
+main {
+    padding-top: 4rem;
 }
 
 img {

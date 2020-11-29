@@ -1,0 +1,42 @@
+// test
+.menubar, .intro {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menubar {
+    width: 90%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header-logo {
+        width: 125px;
+    }
+}
+
+.intro {
+    text-align: center;
+    width: 82%;
+    line-height: 1.5;
+    margin-bottom: 4rem;
+
+    &__title {
+        font-size: 1.3em;
+    }
+    &__paragraph {
+        font-size: 1rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.header-illustration {
+    width: 82%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
