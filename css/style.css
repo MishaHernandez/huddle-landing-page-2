@@ -432,6 +432,12 @@ h1, h2, h3 {
 .menubar .header-logo {
   width: 125px;
 }
+.menubar .header-logo svg {
+  width: 100%;
+}
+.menubar .header-logo .logotipo {
+  fill: #FF52C1;
+}
 
 .intro {
   text-align: center;
@@ -501,7 +507,7 @@ h1, h2, h3 {
 }
 
 .info-contact, .info-site, .info-social, .copyright, .attribution {
-  width: 93%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -511,7 +517,22 @@ h1, h2, h3 {
   margin-bottom: 3.5rem;
 }
 .info-contact__logo {
-  width: 180px;
+  width: 160px;
+}
+.info-contact__logo svg {
+  width: 100%;
+}
+.info-contact__paragraph {
+  display: flex;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+.info-contact__paragraph:first-of-type svg {
+  margin-right: 1.5rem;
+}
+.info-contact__paragraph svg {
+  flex-shrink: 0;
+  margin-right: 1.2rem;
 }
 .info-site {
   display: grid;
@@ -524,22 +545,35 @@ h1, h2, h3 {
 .info-social {
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+}
+.info-social__icon {
+  margin-right: 1rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  width: 34px;
+  height: 34px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
 }
 .info-social svg {
-  margin-right: 1rem;
+  width: 100%;
+  display: inline-block;
 }
 
-.copyright {
+.info__author {
+  padding: 0 0 1rem 0;
+}
+.info__author-copyright {
   font-size: 12px;
   text-align: center;
 }
-
-.attribution {
+.info__author-attribution {
   font-size: 11px;
   text-align: center;
 }
-.attribution__link {
+.info__author-link {
   color: #3e52a3;
 }
 

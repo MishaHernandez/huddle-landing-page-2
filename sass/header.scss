@@ -16,6 +16,13 @@
 
     .header-logo {
         width: 125px;
+
+        svg {
+            width: 100%;
+        }
+        .logotipo {
+            fill: #FF52C1;
+        }
     }
 }
 

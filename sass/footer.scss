@@ -1,5 +1,5 @@
 .info-contact, .info-site, .info-social, .copyright, .attribution {
-    width: 93%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -10,7 +10,26 @@
         margin-bottom: 3.5rem;
 
         &__logo {
-            width: 180px;
+            width: 160px;
+
+            svg {
+                width: 100%;
+            }
+        }
+
+        &__paragraph {
+            display: flex;
+            line-height: 1.5;
+            margin-bottom: 1.5rem;
+
+            &:first-of-type svg {
+                margin-right: 1.5rem;
+            }
+
+            svg {
+                flex-shrink: 0;
+                margin-right: 1.2rem;
+            }
         }
     }
 
@@ -27,24 +46,39 @@
     &-social {
         display: flex;
         justify-content: center;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
+
+        &__icon {
+            margin-right: 1rem;
+            border-radius: 50%;
+            border: 1px solid #fff;
+            width: 34px;
+            height: 34px;
+            padding: 8px;
+            
+            display: flex;
+            align-items: center;
+        }
 
         svg {
-            margin-right: 1rem;
+            width: 100%;
+            display: inline-block;
         }
     }
 }
 
-.copyright {
-    font-size: 12px;
-    text-align: center;
-}
+.info__author {
+    padding: 0 0 1rem 0;
 
-.attribution {
-    font-size: 11px;
-    text-align: center;
-
-    &__link {
+    &-copyright {
+        font-size: 12px;
+        text-align: center;
+    }
+    &-attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+    &-link {
         color: hsl(228, 45%, 44%);
     }
 }
