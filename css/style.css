@@ -364,7 +364,12 @@ body {
 }
 
 header {
-  background-color: #ebfbff;
+  background: #ebfbff center url(../images/bg-hero-mobile.svg) no-repeat;
+}
+@media (min-width: 1200px) {
+  header {
+    background: #ebfbff center url(../images/bg-hero-desktop.svg) no-repeat;
+  }
 }
 
 main {

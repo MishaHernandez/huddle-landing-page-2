@@ -10,7 +10,11 @@ body {
 }
 
 header {
-    background-color: $very-pale-cyan;
+    background: $very-pale-cyan center url(../images/bg-hero-mobile.svg) no-repeat;
+
+    @include desktop {
+        background: $very-pale-cyan center url(../images/bg-hero-desktop.svg) no-repeat;
+    }
 }
 
 main {
