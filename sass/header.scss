@@ -1,5 +1,5 @@
 // test
-.menubar, .intro {
+.menubar {
     margin-left: auto;
     margin-right: auto;
 }
@@ -18,6 +18,10 @@
         display: block;
         width: 125px;
 
+        @include desktop {
+            width: 190px;
+        }
+
         svg {
             width: 100%;
         }
@@ -27,24 +31,53 @@
     }
 }
 
+.hero-image {
+    width: 82%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    @include desktop {
+        width: 90%;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 3rem;
+    }
+}
+
 .intro {
     text-align: center;
-    width: 82%;
     line-height: 1.5;
     margin-bottom: 4rem;
 
+    @include desktop {
+        text-align: left;
+    }
+
     &__title {
         font-size: 1.3em;
+
+        @include desktop {
+            font-size: 2.5rem;
+        }
     }
+
     &__paragraph {
         font-size: 1rem;
         margin-bottom: 2.5rem;
+
+        @include desktop {
+            font-size: 1.1rem;
+        }
     }
 }
 
 .header-illustration {
-    width: 82%;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 2rem;
+    
+    @include desktop {
+        margin-bottom: 4rem;
+        width: 690px;
+    }
 }

@@ -11,11 +11,14 @@ body {
 
 header {
     background-color: $very-pale-cyan;
-    display: grid;
 }
 
 main {
     padding-top: 4rem;
+
+    @include desktop {
+        margin-top: 6.1rem;
+    }
 }
 
 footer {
