@@ -2,6 +2,15 @@
     display: inline-block;
     border-radius: 2rem;
     font-weight: 700;
+    opacity: 1;
+    transition: opacity .3s;
+    
+    @include desktop {
+        &:hover {
+            opacity: .5;
+            transition: opacity .3s;
+        }
+    }
 }
 
 .button--try {

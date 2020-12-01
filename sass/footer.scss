@@ -76,6 +76,12 @@
 
         &__link {
             color: $very-pale-cyan;
+            
+            @include desktop {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
         }
     }
 
@@ -96,9 +102,22 @@
             width: 34px;
             height: 34px;
             padding: 8px;
+            transition: border .3s;
             
             display: flex;
             align-items: center;
+
+            @include desktop {
+                
+                &:hover {
+                    border-color: $pink;
+                    transition: border-color .3s;
+                    svg {
+                        fill: $pink;
+                        transition: fill .3s;
+                    }
+                }
+            }
         }
 
         svg {
