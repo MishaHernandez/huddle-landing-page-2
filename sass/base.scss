@@ -26,6 +26,10 @@ footer {
     background-color: $very-dark-cyan;
     color: $very-pale-cyan;
 
+    @include desktop {
+        padding-top: 11.5rem;
+    }
+
     svg {
         fill: $very-pale-cyan;
     }

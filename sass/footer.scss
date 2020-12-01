@@ -3,18 +3,41 @@
     margin-left: auto;
     margin-right: auto;
 }
+.footer-content {
+    @include desktop {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.footer-logo {
+    width: 160px;
+    margin-left: 1.2rem;
+
+    @include desktop {
+        width: 230px;
+        margin-bottom: 2rem;
+    }
+
+    svg {
+        width: 100%;
+    }
+}
 
 .info { 
+    &-content {
+        display: grid;
+
+        @include desktop {
+            grid-template-columns: 1.5fr 2fr 1fr;
+        }
+    }
     &-contact {
         font-size: 1rem;
         margin-bottom: 3.5rem;
 
-        &__logo {
-            width: 160px;
-
-            svg {
-                width: 100%;
-            }
+        @include desktop {
+            margin-bottom: 0;
         }
 
         &__paragraph {
@@ -22,8 +45,13 @@
             line-height: 1.5;
             margin-bottom: 1.5rem;
 
-            &:first-of-type svg {
-                margin-right: 1.5rem;
+            &:first-of-type {
+                @include desktop {
+                    margin-top: 0;
+                }
+                svg {
+                    margin-right: 1.5rem;
+                }
             }
 
             svg {
@@ -39,6 +67,13 @@
         justify-items: start;
         margin-bottom: 3.5rem;
 
+        @include desktop {
+            width: 60%;
+            grid-template-columns: 1fr 1fr;
+            align-content: start;
+            margin-bottom: 0;
+        }
+
         &__link {
             color: $very-pale-cyan;
         }
@@ -48,6 +83,10 @@
         display: flex;
         justify-content: center;
         margin-bottom: 1.5rem;
+
+        @include desktop {
+            margin-bottom: 0;
+        }
 
         &__icon {
             display: block;
@@ -71,16 +110,19 @@
 
 .info__author {
     padding: 0 0 1rem 0;
+    text-align: center;
+
+    @include desktop {
+        text-align: right;
+    }
 
     &-copyright {
         font-size: 12px;
-        text-align: center;
     }
     &-attribution {
         font-size: 11px;
-        text-align: center;
     }
     &-link {
-        color: hsl(228, 45%, 44%);
+        color: $pink;
     }
 }
