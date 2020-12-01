@@ -429,6 +429,11 @@ h1, h2, h3 {
     font-size: 14px;
     padding: 14px 4rem;
   }
+  .button--primary-2 {
+    border-radius: 2.3rem;
+    font-size: 1.2rem;
+    padding: 1.6rem 6.5rem;
+  }
 }
 
 .menubar {
@@ -524,24 +529,75 @@ h1, h2, h3 {
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
   text-align: center;
   padding: 3.5rem 1rem 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1200px) {
+  .card {
+    max-width: 1232px;
+    flex-direction: row;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 .card__illustration {
   width: 82%;
   margin-bottom: 2.3rem;
 }
-.card__subtitle {
-  font-size: 1.3rem;
+@media (min-width: 1200px) {
+  .card__illustration {
+    max-width: 25.3rem;
+    order: 2;
+  }
 }
-.card__paragraph {
+.card:nth-of-type(2) .card__illustration {
+  margin-left: 5.65rem;
+}
+.card__text {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
+}
+@media (min-width: 1200px) {
+  .card__text-1, .card__text-3 {
+    order: 1;
+    text-align: left;
+    width: 32rem;
+    margin-left: 5.65rem;
+  }
+  .card__text-2 {
+    order: 2;
+    text-align: left;
+    width: 31rem;
+    margin-right: 0;
+  }
+}
+.card__text-subtitle {
+  font-size: 1.3rem;
+}
+@media (min-width: 1200px) {
+  .card__text-subtitle {
+    font-size: 1.75rem;
+  }
+}
+.card__text-paragraph {
   font-size: 14px;
   color: #808d99;
   line-height: 1.5;
 }
+@media (min-width: 1200px) {
+  .card__text-paragraph {
+    font-size: 1.1rem;
+  }
+}
 .card:nth-child(3) {
   margin-bottom: 4rem;
+}
+@media (min-width: 1200px) {
+  .card:nth-child(3) {
+    margin-bottom: 6.3rem;
+  }
 }
 
 .ad {
@@ -557,8 +613,20 @@ h1, h2, h3 {
   padding: 2rem 1rem;
   background-color: #fff;
 }
+@media (min-width: 1200px) {
+  .ad {
+    width: 50rem;
+    font-size: 1.7rem;
+    padding: 2.4rem 1rem 3.25rem 1rem;
+  }
+}
 .ad__subtitle {
   margin-bottom: 2rem;
+}
+@media (min-width: 1200px) {
+  .ad__subtitle {
+    margin-bottom: 2.5rem;
+  }
 }
 
 .info-contact, .info-site, .info-social, .copyright, .attribution {

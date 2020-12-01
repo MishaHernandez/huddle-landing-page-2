@@ -3,6 +3,7 @@
     border-radius: 2rem;
     font-weight: 700;
 }
+
 .button--try {
     background-color: #fff;
     color: initial;
@@ -25,5 +26,11 @@
     @include desktop {
         font-size: 14px;
         padding: 14px 4rem;
+
+        &-2 {
+            border-radius: 2.3rem;
+            font-size: 1.2rem;
+            padding: 1.6rem 6.5rem;
+        }
     }
 }

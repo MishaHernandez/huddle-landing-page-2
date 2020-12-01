@@ -1,10 +1,4 @@
 .card {
-
-    &__illustration {
-        width: 82%;
-        margin-bottom: 2.3rem;
-    }
-
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -13,22 +7,78 @@
     box-shadow: 0 0 16px rgba(0, 0, 0, .1);
     text-align: center;
     padding: 3.5rem 1rem 1.5rem 1rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    &__subtitle {
-        font-size: 1.3rem;
+    @include desktop {
+        max-width: 1232px;
+        flex-direction: row;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
-    &__paragraph {
+    &__illustration {
+        width: 82%;
+        margin-bottom: 2.3rem;
+
+        @include desktop {
+            max-width: 25.3rem;
+            order: 2;
+        }
+    }
+
+    // illustration in card 2
+    &:nth-of-type(2) .card__illustration {
+        margin-left: 5.65rem;
+    }
+
+    &__text {
         width: 85%;
         margin-left: auto;
         margin-right: auto;
-        font-size: 14px;
-        color: $grayish-blue;
-        line-height: 1.5;
+
+        @include desktop {
+            &-1, &-3 {
+                order: 1;
+                text-align: left;
+                width: 32rem;
+                margin-left: 5.65rem;
+            }
+            &-2 {
+                order: 2;
+                text-align: left;
+                width: 31rem;
+                margin-right: 0;
+            }
+        }
+
+        &-subtitle {
+            font-size: 1.3rem;
+    
+            @include desktop {
+                font-size: 1.75rem;
+            }
+        }
+    
+        &-paragraph {
+            font-size: 14px;
+            color: $grayish-blue;
+            line-height: 1.5;
+
+            @include desktop {
+                font-size: 1.1rem;
+            }
+        }
     }
 
     &:nth-child(3) {
         margin-bottom: 4rem;
+
+        @include desktop {
+            margin-bottom: 6.3rem;
+        }
     }
 }
 
@@ -45,7 +95,17 @@
     font-size: 1rem;
     padding: 2rem 1rem;
     background-color: #fff;
+
+    @include desktop {
+        width: 50rem;
+        font-size: 1.7rem;
+        padding: 2.4rem 1rem 3.25rem 1rem;
+    }
     &__subtitle {
         margin-bottom: 2rem;
+
+        @include desktop {
+            margin-bottom: 2.5rem;
+        }
     }
 }
