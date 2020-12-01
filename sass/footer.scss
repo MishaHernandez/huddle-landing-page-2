@@ -36,6 +36,7 @@
     &-site {
         display: grid;
         gap: 1.5rem;
+        justify-items: start;
         margin-bottom: 3.5rem;
 
         &__link {
@@ -49,6 +50,7 @@
         margin-bottom: 1.5rem;
 
         &__icon {
+            display: block;
             margin-right: 1rem;
             border-radius: 50%;
             border: 1px solid #fff;

@@ -430,6 +430,7 @@ h1, h2, h3 {
   align-items: center;
 }
 .menubar .header-logo {
+  display: block;
   width: 125px;
 }
 .menubar .header-logo svg {
@@ -537,6 +538,7 @@ h1, h2, h3 {
 .info-site {
   display: grid;
   gap: 1.5rem;
+  justify-items: start;
   margin-bottom: 3.5rem;
 }
 .info-site__link {
@@ -548,6 +550,7 @@ h1, h2, h3 {
   margin-bottom: 1.5rem;
 }
 .info-social__icon {
+  display: block;
   margin-right: 1rem;
   border-radius: 50%;
   border: 1px solid #fff;
