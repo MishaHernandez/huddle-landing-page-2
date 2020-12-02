@@ -545,16 +545,21 @@ h1, h2, h3 {
   margin-right: auto;
   margin-bottom: 2.5rem;
   border-radius: 1rem;
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
   text-align: center;
   padding: 3.5rem 1rem 1.5rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 800px) {
+  .card {
+    flex-direction: row;
+  }
+}
 @media (min-width: 1200px) {
   .card {
-    max-width: 1232px;
+    max-width: 77rem;
     flex-direction: row;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -566,6 +571,11 @@ h1, h2, h3 {
 .card__illustration {
   width: 82%;
   margin-bottom: 2.3rem;
+}
+@media (min-width: 800px) {
+  .card__illustration {
+    width: 50%;
+  }
 }
 @media (min-width: 1200px) {
   .card__illustration {
@@ -621,7 +631,7 @@ h1, h2, h3 {
 
 .ad {
   position: relative;
-  bottom: -60px;
+  bottom: -3.75rem;
   width: 93%;
   margin-left: auto;
   margin-right: auto;
@@ -637,7 +647,7 @@ h1, h2, h3 {
     width: 50rem;
     font-size: 1.7rem;
     padding: 2.4rem 1rem 3.25rem 1rem;
-    bottom: -90px;
+    bottom: -5.62rem;
   }
 }
 .ad__subtitle {
@@ -655,6 +665,12 @@ h1, h2, h3 {
   margin-right: auto;
 }
 
+@media (min-width: 800px) {
+  .footer-content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
 @media (min-width: 1200px) {
   .footer-content {
     max-width: 1200px;
@@ -680,7 +696,7 @@ h1, h2, h3 {
 .info-content {
   display: grid;
 }
-@media (min-width: 1200px) {
+@media (min-width: 800px) {
   .info-content {
     grid-template-columns: 1.5fr 2fr 1fr;
   }
@@ -717,11 +733,15 @@ h1, h2, h3 {
   justify-items: start;
   margin-bottom: 3.5rem;
 }
+@media (min-width: 600px) {
+  .info-site {
+    grid-template-columns: 1fr 1fr;
+    align-content: start;
+  }
+}
 @media (min-width: 1200px) {
   .info-site {
     width: 60%;
-    grid-template-columns: 1fr 1fr;
-    align-content: start;
     margin-bottom: 0;
   }
 }

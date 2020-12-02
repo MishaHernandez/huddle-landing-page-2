@@ -4,6 +4,11 @@
     margin-right: auto;
 }
 .footer-content {
+
+    @include big-tablet {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
     @include desktop {
         max-width: 1200px;
         margin-left: auto;
@@ -28,7 +33,7 @@
     &-content {
         display: grid;
 
-        @include desktop {
+        @include big-tablet {
             grid-template-columns: 1.5fr 2fr 1fr;
         }
     }
@@ -67,10 +72,13 @@
         justify-items: start;
         margin-bottom: 3.5rem;
 
-        @include desktop {
-            width: 60%;
+        @include tablet {
             grid-template-columns: 1fr 1fr;
             align-content: start;
+        }
+
+        @include desktop {
+            width: 60%;
             margin-bottom: 0;
         }
 
